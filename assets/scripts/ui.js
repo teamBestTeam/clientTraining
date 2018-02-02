@@ -7,7 +7,7 @@ const config = require('./config')
 // 
 const displayOneBookSuccess = function {
    const showOneBookHtml = displayOneBookTemplate ({book: data.book})
-   $('#user-messages').append(displayOneBookHtml)
+   $('#user-messages').append(showOneBookHtml)
 }
 
 const displayOneBookFailure = function () {
