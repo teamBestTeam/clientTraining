@@ -2,7 +2,6 @@
 const displayOneBookTemplate = require('./displayOneBook.handlebars')
 const config = require('./config')
 
-// need to require the handlebars template
 
 const displayOneBookSuccess = displayOneBookTemplate ({book: data.book})
 $('#user-messages').html(`<p> Here is your book!</p>`)
