@@ -10,11 +10,16 @@ const onDisplayOneBook = (event) => {
     // .catch(ui.displayOneBookFailure)
 }
 
+const onDisplayManyBooks = (event) => {
+  api.displayManyBooks()
+    // .then(ui.displayOneBookSuccess)
+    // .catch(ui.displayOneBookFailure)
+}
 
-const addHandler = function() {
-  $('#displayOneBook').on('click', onDisplayOneBook)
-  $('#displayOneBook').on('click', onDisplayOneBook)
 
+const addHandler = function () {
+  $('#displayOneBook').on('click', onDisplayOneBook)
+  $('#displayManyBooks').on('click', onDisplayManyBooks)
 }
 
 module.exports = {
