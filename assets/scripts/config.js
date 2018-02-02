@@ -1,8 +1,11 @@
 'use strict'
 
+
+// Can you see me?
 const config = {
   apiOrigins: {
-    production: 'https://ga-wdi-boston.herokuapp.com'
+    production: 'https://wdi-library.herokuapp.com',
+    development: 'https://wdi-library.herokuapp.com'
   }
 }
 
