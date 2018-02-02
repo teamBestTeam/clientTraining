@@ -2,9 +2,12 @@
 const displayOneBookTemplate = require('./displayOneBook.handlebars')
 const config = require('./config')
 
-
-const displayOneBookSuccess = displayOneBookTemplate ({book: data.book})
-$('#user-messages').append(displayOneBookHtml)
+// Hi friend! Here is my thought: if displayOneBookSuccess is supposed to be a function that makes some jQuery changes
+// to two divs, this is not yet a function. 
+// 
+const displayOneBookSuccess = function {
+   const showOneBookHtml = displayOneBookTemplate ({book: data.book})
+   $('#user-messages').append(displayOneBookHtml)
 }
 
 const displayOneBookFailure = function () {
